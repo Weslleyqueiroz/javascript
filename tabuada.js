@@ -1,0 +1,1 @@
+//15. Receber um número e exibir sua tabuada de 1 a 10.

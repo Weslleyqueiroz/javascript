@@ -1,0 +1,1 @@
+//20. Receber um número; se for par mostrar tabuada, se for ímpar contagem regressiva até 0.

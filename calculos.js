@@ -1,0 +1,21 @@
+function somar (numero1, numero2){
+    return numero1 + numero2
+ 
+}
+console.log(somar(2,5))
+///////////////////////////////////////////////////////////////////////////////////////////
+function multiplicar (numero1, numero2){
+    return numero1 * numero2
+}
+console.log(multiplicar(2,5))
+///////////////////////////////////////////////////////////////////////////////////////////
+function divisao (numero1, numero2){
+    return (numero1/numero2)
+ 
+}
+console.log(divisao(10,2))
+///////////////////////////////////////////////////////////////////////////////////////////
+function resto (numero1, numero2){
+    return (numero1*numero2)%2
+}
+console.log(resto(10,2))
