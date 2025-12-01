@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5: Lista de Tarefas Interativa</title>
+    <link rel="stylesheet" href="exercicio5_lista_tarefas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício 5: Lista de Tarefas Interativa</h1>
+        
+        <p>Este exercício demonstra como combinar manipulação de classes e atributos para criar uma lista de tarefas interativa. Você pode adicionar novas tarefas, marcar como concluídas, editar e excluir.</p>
+        
+        <div class="todo-app">
+            <div class="todo-header">
+                <input type="text" class="todo-input" id="new-task" placeholder="Adicionar nova tarefa...">
+                <button class="add-button" id="add-task">+</button>
+            </div>
+            
+            <ul class="todo-list" id="task-list">
+                <li class="todo-item" data-id="1" data-completed="false">
+                    <input type="checkbox" class="todo-checkbox">
+                    <span class="todo-text">Estudar manipulação de classes com JavaScript</span>
+                    <input type="text" class="edit-input">
+                    <div class="todo-actions">
+                        <button class="edit-btn">✏️</button>
+                        <button class="delete-btn">🗑️</button>
+                    </div>
+                </li>
+                <li class="todo-item" data-id="2" data-completed="false">
+                    <input type="checkbox" class="todo-checkbox">
+                    <span class="todo-text">Praticar manipulação de atributos HTML</span>
+                    <input type="text" class="edit-input">
+                    <div class="todo-actions">
+                        <button class="edit-btn">✏️</button>
+                        <button class="delete-btn">🗑️</button>
+                    </div>
+                </li>
+                <li class="todo-item completed" data-id="3" data-completed="true">
+                    <input type="checkbox" class="todo-checkbox" checked>
+                    <span class="todo-text">Revisar seleção de elementos no DOM</span>
+                    <input type="text" class="edit-input">
+                    <div class="todo-actions">
+                        <button class="edit-btn">✏️</button>
+                        <button class="delete-btn">🗑️</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <h2>Como funciona:</h2>
+        <p>Este exemplo combina manipulação de classes e atributos para:</p>
+        <ul>
+            <li>Marcar tarefas como concluídas usando <code>classList.toggle()</code> para adicionar/remover a classe <code>completed</code></li>
+            <li>Armazenar o estado de conclusão usando o atributo <code>data-completed</code></li>
+            <li>Habilitar a edição de tarefas usando o atributo <code>contenteditable</code> ou alternando entre elementos de exibição e edição</li>
+        </ul>
+        
+    </div>
+
+    <script src="exercicio5_lista_tarefas.js"></script>
+</body>
+</html>

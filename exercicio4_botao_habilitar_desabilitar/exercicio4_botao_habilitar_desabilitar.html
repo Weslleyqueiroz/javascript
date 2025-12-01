@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4: Botão de Habilitar/Desabilitar</title>
+    <link rel="stylesheet" href="exercicio4_botao_habilitar_desabilitar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício 4: Botão de Habilitar/Desabilitar</h1>
+        
+        <p>Este exercício demonstra como usar <code>setAttribute()</code>, <code>removeAttribute()</code> e <code>hasAttribute()</code> para habilitar ou desabilitar campos de formulário.</p>
+        
+        <div class="form-container">
+            <div class="form-group">
+                <label for="username" class="form-label">Nome de usuário:</label>
+                <input type="text" id="username" class="form-input" value="usuario123" disabled>
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-input" value="usuario@exemplo.com" disabled>
+            </div>
+            
+            <div class="form-group">
+                <label for="bio" class="form-label">Biografia:</label>
+                <textarea id="bio" class="form-input" rows="4" disabled>Esta é uma biografia de exemplo para o usuário.</textarea>
+            </div>
+            
+            <button id="toggle-button" class="btn">
+                <i class="fas fa-lock-open">🔓</i> Habilitar Campos
+            </button>
+        </div>
+        
+        <h2>Como funciona:</h2>
+        <p>Quando você clica no botão, o JavaScript verifica se os campos estão desabilitados usando <code>hasAttribute('disabled')</code>. Se estiverem, ele remove o atributo <code>disabled</code> usando <code>removeAttribute()</code>. Caso contrário, ele adiciona o atributo usando <code>setAttribute()</code>.</p>
+        
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3: Galeria de Imagens Dinâmica</title>
+    <link rel="stylesheet" href="exercicio3_galeria_imagens.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Exercício 3: Galeria de Imagens Dinâmica</h1>
+
+        <p>Este exercício demonstra como usar <code>getAttribute()</code> e <code>setAttribute()</code> para criar uma
+            galeria de imagens dinâmica. Clique nas miniaturas abaixo para alterar a imagem principal.</p>
+
+        <div class="gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="images/paisagem1.jpg" alt="Paisagem com montanhas e lago" class="main-image">
+                <div id="image-caption" class="image-caption">Paisagem com montanhas e lago</div>
+            </div>
+
+            <div class="thumbnails">
+                <div class="thumbnail active" data-index="1">
+                    <img src="images/paisagem1.jpg" alt="Paisagem com montanhas e lago">
+                </div>
+                <div class="thumbnail" data-index="2">
+                    <img src="images/paisagem2.jpg" alt="Floresta com neblina">
+                </div>
+                <div class="thumbnail" data-index="3">
+                    <img src="images/paisagem3.jpg" alt="Montanhas ao pôr do sol">
+                </div>
+                <div class="thumbnail" data-index="4">
+                    <img src="images/paisagem4.jpg" alt="Lago com reflexo de montanhas">
+                </div>
+            </div>
+        </div>
+
+        <h2>Como funciona:</h2>
+        <p>Quando você clica em uma miniatura, o JavaScript obtém os atributos <code>src</code> e <code>alt</code> da
+            imagem clicada usando <code>getAttribute()</code> e, em seguida, atualiza a imagem principal usando
+            <code>setAttribute()</code>.</p>
+
+
+    </div>
+    <script src="exercicio3_galeria_imagens.js"></script>
+</body>
+
+</html>

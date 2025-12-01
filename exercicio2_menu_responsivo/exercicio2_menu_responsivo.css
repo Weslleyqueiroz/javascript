@@ -1,0 +1,131 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos do cabeçalho e navegação */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Estilos do menu de navegação */
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #3498db;
+}
+
+/* Botão do menu hambúrguer (inicialmente oculto) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #3498db;
+    cursor: pointer;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 40px 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.code-block {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 20px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        /* Mostrar botão hambúrguer */
+    }
+
+    .nav-menu {
+        display: none;
+        /* Esconder menu por padrão */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+        margin-left: 0;
+    }
+
+    /* Classe para mostrar o menu quando ativo */
+    .nav-menu.visible {
+        display: flex;
+    }
+
+    /* Estilo para o botão quando o menu está ativo */
+    .menu-toggle.active {
+        color: #2980b9;
+    }
+}
